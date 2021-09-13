@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>MoneyGram</title>
+   <link rel="stylesheet" href="./css/bootstrap.min.css">
+   <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+   <section class="moneygram">
+      <div class="container">
+         <h1 class="moneygram__heading text-center pt-5 pb-3">Currency Converter</h1>
+         <p class="moneygram__paragraph text-center text-info">Check live foreign currency exchange rates</p>
+         
+         <div class="moneygram__converter border mt-5 p-5 ">
+            <h2 class="moneygram__converter__headding text-center">Moneygramm</h2>
+            <form class="moneygram__form ">
+               
+               <label class="moneygram__form__label label-input form-label text-info h3 mb-2">
+                  Amount of money
+                  <input class="moneygram__form__input form-control  mt-3"
+                  type="number" 
+                  name="user_money" 
+                  placeholder="0.0"
+                  required>
+               </label>
+               
+               <div class="moneygram__converter-box mb-3">
+                  <label class="label__select__from text-info h3 me-3">
+                     From
+                     <select class="moneygram__select__from form-select mt-1 " name="user_change">
+                        <option value="usd">USD</option>
+                        <option value="euro">EURO</option>
+                        <option value="rub">RUB</option>
+                        <option value="uzs">UZS</option>
+                     </select>
+                  </label>
+                  <button class="moneygram__converter-box__arrow-btn me-3" type="button">
+                     <img src="./images/arrow.png"
+                     alt="arrow change" 
+                     width="45" 
+                     height="30">
+                  </button>
+                  <label class="label__select__to text-info h3">
+                     To
+                     <select class="moneygram__select__to form-select mt-1" name="user_changee">
+                        <option value="usd">USD</option>
+                        <option value="euro">EURO</option>
+                        <option value="rub">RUB</option>
+                        <option value="uzs">UZS</option>
+                     </select>
+                  </label>
+               </div>
+               
+               <div class="moneygram__converter__result mb-4 p-1">
+                  
+               </div>
+               
+               <button class="moneygram__converter__btn" type="submit">Convert</button>
+               
+            </form>
+         </div>
+         
+      </div>
+   </section>
+   <script src="./js/main.js"></script>
+</body>
+</html>
